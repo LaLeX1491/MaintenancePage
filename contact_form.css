@@ -1,0 +1,72 @@
+.contact {
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url("background_contact.png");
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.contact form input {
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    transition: all 1s;
+
+    border-bottom: dotted 2px white;
+}
+.contact form input:hover {
+    border-bottom: dotted 2px rgb(80, 80, 230);
+}
+.contact form input:focus {
+    outline: none;
+    border-bottom: solid 2px rgb(80, 80, 230);
+}
+.contact form {
+    font-size: 1.2em;
+}
+.contact form textarea {
+    color: white;
+    resize: none;
+    background-color: transparent;
+    border: dotted 2px white;
+
+    transition: all 1s;
+}
+.contact form textarea:hover {
+    border: dotted 2px rgb(80, 80, 230);
+}
+.contact form textarea:focus {
+    outline: none;
+    border: solid 2px rgb(80, 80, 230);
+}
+.contact form button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    transition: all 1s;
+}
+.contact form button i {
+    font-size: 30px;
+}
+.contact form button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.submitbutton {
+    margin-left: 30px;
+}
+.submitbutton:hover {
+    color: rgb(1, 255, 1);
+}
+.deletebutton:hover {
+    color: red;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2em;
+}

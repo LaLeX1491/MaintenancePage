@@ -1,0 +1,198 @@
+body, html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("background.png");
+
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+
+    height: 100%;
+    width: 100%;
+
+    background-size: 102% 102%;
+}
+
+.bg-text {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+:root {
+    --icon_margin: 50px;
+    --icon_hover_color: rgb(66, 66, 66);
+    --icon_text-fontsize: 0.5em;
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-container {
+    margin-top: 50px;
+}
+.icon-container i {
+    transition: all 0.7s;
+}
+.icon-container i:hover {
+    transform: scale(1.1);
+    color: var(--icon_hover_color);
+}
+
+.icon1 {
+    cursor: pointer;
+    font-size: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    display: inline;
+    position: relative;
+    margin-right: var(--icon_margin);
+}
+.icon1-text {
+    color: var(--icon_hover_color);
+    font-size: var(--icon_text-fontsize);
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    width: 95vw;
+
+    color: var(--icon_hover_color);
+}
+.icon1-text:hover {
+    transition: all 0.3s;
+    transform: scale(1.01);
+    color: white;
+}
+.icon1:hover .icon1-text {
+    animation: fadeIn 0.7s;
+    visibility: visible;
+}
+
+
+.icon2 {
+    cursor: pointer;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    display: inline;
+    margin-right: var(--icon_margin);
+}
+.icon2-text {
+    color: var(--icon_hover_color);
+    font-size: var(--icon_text-fontsize);
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    width: 95vw;
+
+    color: var(--icon_hover_color);
+}
+.icon2-text:hover {
+    transition: all 0.3s;
+    transform: scale(1.01);
+    color: white;
+}
+.icon2:hover .icon2-text {
+    animation: fadeIn 0.7s;
+    visibility: visible;
+}
+
+
+
+.icon3 {
+    cursor: pointer;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    display: inline;
+    margin-right: var(--icon_margin);
+}
+.icon3-text {
+    color: var(--icon_hover_color);
+    font-size: var(--icon_text-fontsize);
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    width: 95vw;
+
+    color: var(--icon_hover_color);
+}
+.icon3-text:hover {
+    transition: all 0.3s;
+    transform: scale(1.01);
+    color: white;
+}
+.icon3:hover .icon3-text {
+    animation: fadeIn 0.7s;
+    visibility: visible;
+}
+
+
+
+.icon4 {
+    cursor: pointer;
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    display: inline;
+    margin-right: var(--icon_margin);
+}
+.icon4-text {
+    color: var(--icon_hover_color);
+    font-size: var(--icon_text-fontsize);
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    width: 95vw;
+
+    color: var(--icon_hover_color);
+}
+.icon4-text:hover {
+    transition: all 0.3s;
+    transform: scale(1.01);
+    color: white;
+}
+.icon4:hover .icon4-text {
+    animation: fadeIn 0.7s;
+    visibility: visible;
+}
+
+.container h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
